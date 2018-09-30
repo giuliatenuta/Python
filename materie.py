@@ -56,7 +56,7 @@ for i in range(11):
             -fisica,
             -scienze: ''')
     g=int(input("Inserisci ore settimanali della materia scritta precedentemente: "))
-    if  f=="educazione fisica":
+    if  f=="educazione fisica" or "ginnastica":
         while True:
             h=randint(0,5)
             if ora2[h]=="[]" and ora3[h]=="[]":
