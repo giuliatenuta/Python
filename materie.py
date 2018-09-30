@@ -89,17 +89,20 @@ for i in range(11):
                     ora5[k]="["+f+"]"
                     break
     else:
-        
+        q=0
+        r=0
         for y in range(g):
             m=0
-            for n in range(5):
+            for n in range(q,5):
                 l=ore[n]
                 if m==0:
-                    for p in range(6):
+                    for p in range(r,6):
                         if l[p]=="[]":
                             l[p]="["+f+"]"
                             m=1
                             ore[n]=l
+                            q+=1
+                            r+=1
                             break
                 else:break
 
@@ -107,11 +110,11 @@ for i in range(11):
                     
                 
 
-tab["1°"]=ore[0]
-tab["2°"]=ore[1]
-tab["3°"]=ore[2]
-tab["4°"]=ore[3]
-tab["5°"]=ore[4]
+tab["1°"]=str(ore[0])
+tab["2°"]=str(ore[1])
+tab["3°"]=str(ore[2])
+tab["4°"]=str(ore[3])
+tab["5°"]=str(ore[4])
 print(tab["giorni"])
 print(tab["1°"])
 print(tab["2°"])
